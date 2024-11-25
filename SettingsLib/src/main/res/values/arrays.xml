@@ -654,4 +654,30 @@
     <!-- Content descriptions for each of the images in the avatar_images array. -->
     <string-array name="avatar_image_descriptions"/>
 
+
+    <integer-array name="background_style1">
+        <item>@drawable/rounded_ripple</item>
+    </integer-array>
+
+    <!-- Do not translate. -->
+    <integer-array name="background_style2">
+        <item>@drawable/left_rounded_ripple</item>
+        <item>@drawable/right_rounded_ripple</item>
+    </integer-array>
+
+    <!-- Do not translate. -->
+    <integer-array name="background_style3">
+        <item>@drawable/left_rounded_ripple</item>
+        <item>@drawable/square_ripple</item>
+        <item>@drawable/right_rounded_ripple</item>
+    </integer-array>
+
+    <!-- Do not translate. -->
+    <integer-array name="background_style4">
+        <item>@drawable/left_rounded_ripple</item>
+        <item>@drawable/square_ripple</item>
+        <item>@drawable/square_ripple</item>
+        <item>@drawable/right_rounded_ripple</item>
+    </integer-array>
+
 </resources>

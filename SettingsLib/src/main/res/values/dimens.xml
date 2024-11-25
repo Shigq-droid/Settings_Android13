@@ -128,4 +128,55 @@
     <dimen name="broadcast_dialog_btn_text_size">16sp</dimen>
     <dimen name="broadcast_dialog_btn_minHeight">44dp</dimen>
     <dimen name="broadcast_dialog_margin">16dp</dimen>
+
+
+    <!-- Dashboard foreground image inset (from background edge to foreground edge) -->
+    <dimen name="dashboard_tile_foreground_image_inset">6dp</dimen>
+    <!-- Advanced dashboard foreground image inset (from background edge to foreground edge) -->
+    <dimen name="advanced_dashboard_tile_foreground_image_inset">9dp</dimen>
+
+    <!-- Stroke size of adaptive outline -->
+    <dimen name="adaptive_outline_stroke">1dp</dimen>
+
+    <dimen name="settings_bar_view_max_height">72dp</dimen>
+    <dimen name="settings_bar_view_icon_size">24dp</dimen>
+
+    <item name="settingslib_highlight_alpha_material_light" format="float" type="dimen">0.10</item>
+    <item name="settingslib_highlight_alpha_material_dark" format="float" type="dimen">0.10</item>
+
+    <!-- Padding of illustration -->
+    <dimen name="settingslib_illustration_padding">16dp</dimen>
+
+    <dimen name="settingslib_illustration_width">412dp</dimen>
+    <dimen name="settingslib_illustration_height">300dp</dimen>
+
+    <!-- Restricted icon size in switch bar -->
+    <dimen name="settingslib_restricted_icon_size">@android:dimen/config_restrictedIconSize</dimen>
+
+    <!-- Restricted icon in switch bar -->
+    <dimen name="settingslib_restricted_icon_margin_end">16dp</dimen>
+
+    <!-- Size of title margin -->
+    <dimen name="settingslib_switch_title_margin">24dp</dimen>
+
+    <!-- SwitchBar sub settings margin start / end -->
+    <dimen name="settingslib_switchbar_subsettings_margin_start">72dp</dimen>
+    <dimen name="settingslib_switchbar_subsettings_margin_end">16dp</dimen>
+
+    <dimen name="two_target_pref_small_icon_size">24dp</dimen>
+    <dimen name="two_target_pref_medium_icon_size">32dp</dimen>
+
+    <dimen name="secondary_app_icon_size">32dp</dimen>
+    <dimen name="app_preference_padding_start">?android:attr/listPreferredItemPaddingStart</dimen>
+    <dimen name="app_icon_min_width">56dp</dimen>
+    <dimen name="two_target_min_width">72dp</dimen>
+    <dimen name="settingslib_dialogCornerRadius">8dp</dimen>
+
+    <!-- Left padding of the preference -->
+    <dimen name="settingslib_listPreferredItemPaddingStart">16dp</dimen>
+    <!-- Right padding of the preference -->
+    <dimen name="settingslib_listPreferredItemPaddingEnd">16dp</dimen>
+    <!-- Icon size of the preference -->
+    <dimen name="settingslib_preferenceIconSize">24dp</dimen>
+
 </resources>

@@ -18,6 +18,7 @@ package com.android.settings.widget;
 
 import static com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.text.TextUtils;
@@ -116,7 +117,7 @@ public class SettingsMainSwitchPreference extends TwoStatePreference implements
             final TypedArray a = context.obtainStyledAttributes(attrs,
                     androidx.preference.R.styleable.Preference, 0/*defStyleAttr*/,
                     0/*defStyleRes*/);
-            final CharSequence title = TypedArrayUtils.getText(a,
+            @SuppressLint("RestrictedApi") final CharSequence title = TypedArrayUtils.getText(a,
                     androidx.preference.R.styleable.Preference_title,
                     androidx.preference.R.styleable.Preference_android_title);
             if (!TextUtils.isEmpty(title)) {

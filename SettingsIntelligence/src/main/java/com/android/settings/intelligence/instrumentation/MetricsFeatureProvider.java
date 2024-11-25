@@ -39,45 +39,45 @@ public class MetricsFeatureProvider {
     }
 
     public void logGetSuggestion(List<String> ids, long latency) {
-        final SettingsIntelligenceLogProto.SettingsIntelligenceEvent event = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent();
-        event.eventType = SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.GET_SUGGESTION;
-        event.latencyMillis = latency;
-        if (ids != null) {
-            event.suggestionIds = ids.toArray(new String[0]);
-        }
-        logEvent(event);
+//        final SettingsIntelligenceLogProto.SettingsIntelligenceEvent event = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent();
+//        event.eventType = SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.GET_SUGGESTION;
+//        event.latencyMillis = latency;
+//        if (ids != null) {
+//            event.suggestionIds = ids.toArray(new String[0]);
+//        }
+//        logEvent(event);
     }
 
     public void logDismissSuggestion(String id, long latency) {
-        final SettingsIntelligenceLogProto.SettingsIntelligenceEvent event = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent();
-        event.eventType = SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.DISMISS_SUGGESTION;
-        event.latencyMillis = latency;
-        if (!TextUtils.isEmpty(id)) {
-            event.suggestionIds = new String[]{id};
-        }
-        logEvent(event);
+//        final SettingsIntelligenceLogProto.SettingsIntelligenceEvent event = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent();
+//        event.eventType = SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.DISMISS_SUGGESTION;
+//        event.latencyMillis = latency;
+//        if (!TextUtils.isEmpty(id)) {
+//            event.suggestionIds = new String[]{id};
+//        }
+//        logEvent(event);
     }
 
     public void logLaunchSuggestion(String id, long latency) {
-        final SettingsIntelligenceLogProto.SettingsIntelligenceEvent event = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent();
-        event.eventType = SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.LAUNCH_SUGGESTION;
-        event.latencyMillis = latency;
-        if (!TextUtils.isEmpty(id)) {
-            event.suggestionIds = new String[]{id};
-        }
-        logEvent(event);
+//        final SettingsIntelligenceLogProto.SettingsIntelligenceEvent event = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent();
+//        event.eventType = SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.LAUNCH_SUGGESTION;
+//        event.latencyMillis = latency;
+//        if (!TextUtils.isEmpty(id)) {
+//            event.suggestionIds = new String[]{id};
+//        }
+//        logEvent(event);
     }
 
     public void logSearchResultClick(SearchResult result, String query, int type, int count,
             int rank) {
-        final SettingsIntelligenceLogProto.SettingsIntelligenceEvent event = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent();
-        event.eventType = SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.valueOf(type);
-        event.searchResultMetadata = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent.SearchResultMetadata();
-        event.searchResultMetadata.resultCount = count;
-        event.searchResultMetadata.searchResultRank = rank;
-        event.searchResultMetadata.searchResultKey = result.dataKey != null ? result.dataKey : "";
-        event.searchResultMetadata.searchQueryLength = query != null ? query.length() : 0;
-        logEvent(event);
+//        final SettingsIntelligenceLogProto.SettingsIntelligenceEvent event = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent();
+//        event.eventType = SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.valueOf(type);
+//        event.searchResultMetadata = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent.SearchResultMetadata();
+//        event.searchResultMetadata.resultCount = count;
+//        event.searchResultMetadata.searchResultRank = rank;
+//        event.searchResultMetadata.searchResultKey = result.dataKey != null ? result.dataKey : "";
+//        event.searchResultMetadata.searchQueryLength = query != null ? query.length() : 0;
+//        logEvent(event);
     }
 
     public void logEvent(int eventType) {
@@ -85,10 +85,10 @@ public class MetricsFeatureProvider {
     }
 
     public void logEvent(int eventType, long latency) {
-        final SettingsIntelligenceLogProto.SettingsIntelligenceEvent event = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent();
-        event.eventType = SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.valueOf(eventType);
-        event.latencyMillis = latency;
-        logEvent(event);
+//        final SettingsIntelligenceLogProto.SettingsIntelligenceEvent event = new SettingsIntelligenceLogProto.SettingsIntelligenceEvent();
+//        event.eventType = SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.valueOf(eventType);
+//        event.latencyMillis = latency;
+//        logEvent(event);
     }
 
     private void logEvent(SettingsIntelligenceLogProto.SettingsIntelligenceEvent event) {

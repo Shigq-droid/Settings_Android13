@@ -1604,4 +1604,25 @@
     <string name="back_navigation_animation_summary">Enable system animations for predictive back.</string>
     <!-- Developer setting: enable animations when a back gesture is executed, full explanation[CHAR LIMIT=NONE] -->
     <string name="back_navigation_animation_dialog">This setting enables system animations for predictive gesture animation. It requires setting per-app "enableOnBackInvokedCallback" to true in the manifest file.</string>
+
+    <!-- Content description of the dismiss button on a banner message for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_banner_message_dismiss">Dismiss</string>
+
+    <string name="settingslib_learn_more_text">Learn more</string>
+
+    <string name="help_feedback_label">Help &amp; feedback</string>
+
+    <!-- Content description for RadioButton with extra gear icon [CHAR LIMIT=NONE] -->
+    <string name="settings_label">Settings</string>
+
+    <!-- Summary for switch preference to denote it is switched on [CHAR LIMIT=50] -->
+    <string name="enabled_by_admin">Enabled by admin</string>
+    <!-- Summary for switch preference to denote it is switched off [CHAR LIMIT=50] -->
+    <string name="disabled_by_admin">Disabled by admin</string>
+
+    <!-- A content description for work profile app [CHAR LIMIT=35] -->
+    <string name="accessibility_work_profile_app_description">Work <xliff:g id="app_name" example="Camera">%s</xliff:g></string>
+    <!-- Text used as a search hint into the search box [CHAR_LIMIT=60]-->
+    <string name="search_menu">Search settings</string>
+
 </resources>

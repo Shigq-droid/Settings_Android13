@@ -31,7 +31,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
 
 import com.android.settings.intelligence.R;
-import com.android.settings.intelligence.nano.SettingsIntelligenceLogProto;
+import com.android.settings.intelligence.SettingsIntelligenceLogProto;
 import com.android.settings.intelligence.search.ResultPayload;
 import com.android.settings.intelligence.search.SearchFeatureProvider;
 import com.android.settings.intelligence.search.SearchResult;
@@ -50,7 +50,7 @@ public class InputDeviceResultTask extends SearchQueryTask.QueryWorker {
     private static final String TAG = "InputResultFutureTask";
 
     public static final int QUERY_WORKER_ID =
-            SettingsIntelligenceLogProto.SettingsIntelligenceEvent.SEARCH_QUERY_INPUT_DEVICES;
+            SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.SEARCH_QUERY_INPUT_DEVICES.getNumber();
 
     @VisibleForTesting
     static final String PHYSICAL_KEYBOARD_FRAGMENT =

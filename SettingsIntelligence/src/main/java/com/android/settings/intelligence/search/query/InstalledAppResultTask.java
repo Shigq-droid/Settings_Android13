@@ -24,7 +24,7 @@ import android.net.Uri;
 import android.provider.Settings;
 
 import com.android.settings.intelligence.R;
-import com.android.settings.intelligence.nano.SettingsIntelligenceLogProto;
+import com.android.settings.intelligence.SettingsIntelligenceLogProto;
 import com.android.settings.intelligence.search.AppSearchResult;
 import com.android.settings.intelligence.search.ResultPayload;
 import com.android.settings.intelligence.search.SearchResult;
@@ -41,7 +41,7 @@ import java.util.List;
 public class InstalledAppResultTask extends SearchQueryTask.QueryWorker {
 
     public static final int QUERY_WORKER_ID =
-            SettingsIntelligenceLogProto.SettingsIntelligenceEvent.SEARCH_QUERY_INSTALLED_APPS;
+            SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.SEARCH_QUERY_INSTALLED_APPS.getNumber();
 
     private final PackageManager mPackageManager;
     private final String INTENT_SCHEME = "package";
@@ -70,7 +70,7 @@ public class InstalledAppResultTask extends SearchQueryTask.QueryWorker {
         List<ApplicationInfo> appsInfo = mPackageManager.getInstalledApplications(
                 PackageManager.MATCH_DISABLED_COMPONENTS
                         | PackageManager.MATCH_DISABLED_UNTIL_USED_COMPONENTS
-                        | PackageManager.MATCH_INSTANT);
+                       /* | PackageManager.MATCH_INSTANT*/);
 
         for (ApplicationInfo info : appsInfo) {
             if (!info.enabled

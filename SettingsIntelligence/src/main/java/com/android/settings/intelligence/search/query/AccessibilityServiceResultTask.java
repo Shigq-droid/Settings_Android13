@@ -27,7 +27,7 @@ import android.graphics.drawable.Drawable;
 import android.view.accessibility.AccessibilityManager;
 
 import com.android.settings.intelligence.R;
-import com.android.settings.intelligence.nano.SettingsIntelligenceLogProto;
+import com.android.settings.intelligence.SettingsIntelligenceLogProto;
 import com.android.settings.intelligence.search.ResultPayload;
 import com.android.settings.intelligence.search.SearchResult;
 import com.android.settings.intelligence.search.indexing.DatabaseIndexingUtils;
@@ -40,7 +40,7 @@ import java.util.List;
 public class AccessibilityServiceResultTask extends SearchQueryTask.QueryWorker {
 
     public static final int QUERY_WORKER_ID = SettingsIntelligenceLogProto.SettingsIntelligenceEvent
-            .SEARCH_QUERY_ACCESSIBILITY_SERVICES;
+            .EventType.SEARCH_QUERY_ACCESSIBILITY_SERVICES.getNumber();
 
     private static final int NAME_NO_MATCH = -1;
 

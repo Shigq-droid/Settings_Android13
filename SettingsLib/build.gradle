@@ -26,8 +26,22 @@ android {
 }
 
 dependencies {
-
     implementation libs.appcompat
     implementation libs.material
-    api 'androidx.preference:preference:1.2.1'
+    implementation libs.preference
+    compileOnly files('libs\\iconloader_base.jar')
+    compileOnly files('libs\\framework.jar')
+    implementation 'androidx.annotation:annotation:+'
+    implementation 'com.airbnb.android:lottie:3.1.0'
+
+}
+
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+        Set<File> fileSet = options.bootstrapClasspath.getFiles();
+        List<File> newFileList = new ArrayList<>()
+        newFileList.add(new File("libs/framework.jar"))
+        newFileList.addAll(fileSet)
+        options.bootstrapClasspath = files(newFileList.toArray())
+    }
 }

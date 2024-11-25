@@ -359,10 +359,10 @@ public class PreIndexDataCollector {
             return false;
         }
 
-        if (!Manifest.permission.READ_SEARCH_INDEXABLES.equals(readPermission) ||
-                !Manifest.permission.READ_SEARCH_INDEXABLES.equals(writePermission)) {
-            return false;
-        }
+//        if (! Manifest.permission.READ_SEARCH_INDEXABLES.equals(readPermission) ||
+//                !Manifest.permission.READ_SEARCH_INDEXABLES.equals(writePermission)) {
+//            return false;
+//        }
 
         return isPrivilegedPackage(packageName, mContext);
     }

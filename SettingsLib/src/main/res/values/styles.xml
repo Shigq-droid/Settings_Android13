@@ -77,4 +77,237 @@
         <item name="android:textSize">@dimen/broadcast_dialog_btn_text_size</item>
     </style>
 
+    <style name="SettingsLibActionButton" parent="android:Widget.DeviceDefault.Button.Borderless.Colored">
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:drawableTint">@*android:color/btn_colored_borderless_text_material</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="Banner.Text.Title"
+        parent="@android:style/TextAppearance.DeviceDefault.WindowTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Banner.Text.Summary"
+        parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SettingsBarChart">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SettingsBarChartTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/BarChart.Text.HeaderTitle</item>
+    </style>
+
+    <style name="SettingsBarChartDetailsButton"
+        parent="@android:style/Widget.DeviceDefault.Button.Borderless.Colored">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SettingsBarViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">168dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="SettingsBarChartEmptyText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/settings_bar_view_max_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:textAppearance">@style/BarChart.Text.Summary</item>
+    </style>
+
+    <style name="SettingsBarChartBar">
+        <item name="android:layout_width">8dp</item>
+    </style>
+
+    <style name="SettingsBarChartBarIcon">
+        <item name="android:layout_width">@dimen/settings_bar_view_icon_size</item>
+        <item name="android:layout_height">@dimen/settings_bar_view_icon_size</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:tint">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="SettingsBarChartBarTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textAppearance">@style/BarChart.Text.Title</item>
+    </style>
+
+    <style name="SettingsBarChartBarSummary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textAppearance">@style/BarChart.Text.Summary</item>
+    </style>
+
+    <style name="BarChart.Text"
+        parent="@android:style/TextAppearance.DeviceDefault.WindowTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="BarChart.Text.HeaderTitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BarChart.Text.Title">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="BarChart.Text.Summary"
+        parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SettingsLibRoundedCornerThemeOverlay">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:colorControlHighlight">@color/settingslib_button_ripple</item>
+    </style>
+
+    <style name="SettingsLibButtonStyle" parent="android:Widget.Material.Button">
+        <item name="android:theme">@style/SettingsLibRoundedCornerThemeOverlay</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault.Medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/settingslib_btn_colored_text_material</item>
+        <item name="android:background">@drawable/settingslib_btn_colored_material</item>
+    </style>
+
+    <style name="AppEntitiesHeader.Text"
+        parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="AppEntitiesHeader.Text.HeaderTitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppEntitiesHeader.Text.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppEntitiesHeader.Text.Summary"
+        parent="@*android:style/TextAppearance.DeviceDefault.Body1">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Footer.Title.SettingsLib"
+        parent="@android:style/TextAppearance.DeviceDefault.WindowTitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
+    </style>
+
+    <style name="EntityHeader">
+        <item name="android:background">?android:attr/colorPrimaryDark</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+    <style name="TextAppearance.EntityHeaderTitle"
+        parent="@android:style/TextAppearance.DeviceDefault.WindowTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.EntityHeaderSummary"
+        parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="CrossProfileEntityHeaderIcon">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:antialias">true</item>
+    </style>
+
+    <style name="CrossProfileSwapHorizIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:src">@drawable/ic_swap_horiz_grey</item>
+        <item name="android:antialias">true</item>
+    </style>
+
+    <style name="CrossProfileEntityHeaderTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:fontFamily">google-sans-medium</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="SwitchBar.Switch.Settingslib" parent="@android:style/Widget.Material.CompoundButton.Switch">
+        <item name="android:trackTint">@color/settingslib_switchbar_switch_track_tint</item>
+        <item name="android:thumbTint">@color/settingslib_switchbar_switch_thumb_tint</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">48dp</item>
+    </style>
+
+    <style name="TrimmedHorizontalProgressBar"
+        parent="android:Widget.Material.ProgressBar.Horizontal">
+        <item name="android:indeterminateDrawable">
+            @drawable/progress_indeterminate_horizontal_material_trimmed
+        </item>
+        <item name="android:minHeight">3dp</item>
+        <item name="android:maxHeight">3dp</item>
+    </style>
+
+    <style name="TextAppearance.PreferenceTitle.SettingsLib"
+        parent="@android:style/TextAppearance.Material.Subhead">
+    </style>
+
+    <style name="TextAppearance.PreferenceSummary.SettingsLib"
+        parent="@style/PreferenceSummaryTextStyle">
+    </style>
+
+    <style name="TextAppearance.CategoryTitle.SettingsLib"
+        parent="@android:style/TextAppearance.DeviceDefault.Medium">
+    </style>
+
+    <style name="TextAppearance.TopIntroText"
+        parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+
 </resources>

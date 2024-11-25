@@ -23,7 +23,8 @@ import androidx.annotation.VisibleForTesting;
 import android.util.Log;
 import android.view.View;
 
-import com.android.settings.intelligence.nano.SettingsIntelligenceLogProto;
+//import com.android.settings.intelligence.nano.SettingsIntelligenceLogProto;
+import com.android.settings.intelligence.SettingsIntelligenceLogProto;
 
 import java.util.List;
 
@@ -43,7 +44,8 @@ public class IntentSearchViewHolder extends SearchViewHolder {
 
     @Override
     public int getClickActionMetricName() {
-        return SettingsIntelligenceLogProto.SettingsIntelligenceEvent.CLICK_SEARCH_RESULT;
+//        return SettingsIntelligenceLogProto.SettingsIntelligenceEvent.CLICK_SEARCH_RESULT;
+        return SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.CLICK_SEARCH_RESULT.getNumber();
     }
 
     @Override
