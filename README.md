@@ -159,8 +159,8 @@ build.gradle目前尚不支持product属性，无法通过此属性来区分，�
    return SettingsIntelligenceLogProto.SettingsIntelligenceEvent.CLICK_SEARCH_RESULT;
 
 
-       //return SettingsIntelligenceLogProto.SettingsIntelligenceEvent.CLICK_SEARCH_RESULT;
-     return SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.CLICK_SEARCH_RESULT.getNumber();`
+           //return SettingsIntelligenceLogProto.SettingsIntelligenceEvent.CLICK_SEARCH_RESULT;
+           return SettingsIntelligenceLogProto.SettingsIntelligenceEvent.EventType.CLICK_SEARCH_RESULT.getNumber();`
 
 
 5. \Settings\SettingsIntelligence\src\main\java\com\android\settings\intelligence\search\indexing\XmlParserUtils.java:41: error: cannot find symbol
@@ -170,21 +170,20 @@ build.gradle目前尚不支持product属性，无法通过此属性来区分，�
    location: class styleable
 
 
-    public static String getDataKey(Context context, AttributeSet attrs) {
-        return getData(context, attrs,
-                R.styleable.Preference,
-               /* R.styleable.Preference_android_key*/
-                androidx.preference.R.styleable.Preference_key);
-    }
+        public static String getDataKey(Context context, AttributeSet attrs) {
+            return getData(context, attrs,
+                    R.styleable.Preference,
+                   /* R.styleable.Preference_android_key*/
+                    androidx.preference.R.styleable.Preference_key);
+        }
 
 
 6. \Settings\SettingsLib\src\main\java\com\android\settingslib\accessibility\AccessibilityUtils.java:32: error: package com.android.internal does not exist
    import com.android.internal.R;
 
-
-    Aosp编译整包生成framework.jarCopy出来
-    out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes.jar
-    compileOnly files('libs\\framework.jar')
+        Aosp编译整包生成framework.jarCopy出来
+        out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/classes.jar
+        compileOnly files('libs\\framework.jar')
 
 
 7. \Settings\SettingsLib\src\main\java\com\android\settingslib\Utils.java:51: error: package com.android.launcher3.icons.BaseIconFactory does not exist
@@ -311,5 +310,6 @@ import com.google.android.setupcompat.template.FooterBarMixin;
             }
 
 
-     //最后，在Aosp源码根目录下执行脚本，添加上系统签名
-     java -Djava.library.path="out/host/linux-x86/lib64" -jar out/host/linux-x86/framework/signapk.jar build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 unsign_app.apk sign_app.apk
+
+         //最后，在Aosp源码根目录下执行脚本，添加上系统签名
+         java -Djava.library.path="out/host/linux-x86/lib64" -jar out/host/linux-x86/framework/signapk.jar build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 unsign_app.apk sign_app.apk
