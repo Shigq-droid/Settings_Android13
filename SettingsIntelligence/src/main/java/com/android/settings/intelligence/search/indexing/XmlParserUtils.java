@@ -38,37 +38,38 @@ public class XmlParserUtils {
     public static String getDataKey(Context context, AttributeSet attrs) {
         return getData(context, attrs,
                 R.styleable.Preference,
-                R.styleable.Preference_android_key);
+               /* R.styleable.Preference_android_key*/
+                androidx.preference.R.styleable.Preference_key);
     }
 
     public static String getDataTitle(Context context, AttributeSet attrs) {
         return getData(context, attrs,
                 R.styleable.Preference,
-                R.styleable.Preference_android_title);
+                androidx.preference.R.styleable.Preference_title);
     }
 
     public static String getDataSummary(Context context, AttributeSet attrs) {
         return getData(context, attrs,
                 R.styleable.Preference,
-                R.styleable.Preference_android_summary);
+                androidx.preference.R.styleable.Preference_summary);
     }
 
     public static String getDataSummaryOn(Context context, AttributeSet attrs) {
         return getData(context, attrs,
-                R.styleable.CheckBoxPreference,
-                R.styleable.CheckBoxPreference_android_summaryOn);
+                androidx.preference.R.styleable.CheckBoxPreference,
+                androidx.preference.R.styleable.CheckBoxPreference_android_summaryOn);
     }
 
     public static String getDataSummaryOff(Context context, AttributeSet attrs) {
         return getData(context, attrs,
-                R.styleable.CheckBoxPreference,
-                R.styleable.CheckBoxPreference_android_summaryOff);
+                androidx.preference.R.styleable.CheckBoxPreference,
+                androidx.preference.R.styleable.CheckBoxPreference_android_summaryOff);
     }
 
     public static String getDataEntries(Context context, AttributeSet attrs) {
         return getDataEntries(context, attrs,
-                R.styleable.ListPreference,
-                R.styleable.ListPreference_android_entries);
+                androidx.preference.R.styleable.ListPreference,
+                androidx.preference.R.styleable.ListPreference_android_entries);
     }
 
     public static String getDataKeywords(Context context, AttributeSet attrs) {
@@ -99,7 +100,7 @@ public class XmlParserUtils {
 
     public static int getDataIcon(Context context, AttributeSet attrs) {
         final TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.Preference);
-        final int dataIcon = ta.getResourceId(R.styleable.Preference_android_icon, 0);
+        final int dataIcon = ta.getResourceId(androidx.preference.R.styleable.Preference_android_icon, 0);
         ta.recycle();
         return dataIcon;
     }
@@ -109,7 +110,7 @@ public class XmlParserUtils {
      */
     public static String getDataChildFragment(Context context, AttributeSet attrs) {
         return getData(context, attrs, R.styleable.Preference,
-                R.styleable.Preference_android_fragment);
+                androidx.preference.R.styleable.Preference_android_fragment);
     }
 
     @Nullable

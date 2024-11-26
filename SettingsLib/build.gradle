@@ -1,10 +1,11 @@
 plugins {
     alias(libs.plugins.android.library)
+    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
     namespace 'com.android.settingslib'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         minSdk 30
@@ -23,16 +24,24 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = '21'
+    }
 }
 
 dependencies {
+    implementation libs.core.ktx
     implementation libs.appcompat
     implementation libs.material
     implementation libs.preference
-    compileOnly files('libs\\iconloader_base.jar')
+    implementation libs.window
+    implementation libs.lottie
+    implementation libs.annotation
+    implementation files('libs\\core-icu4j.jar')
+    compileOnly files('libs\\iconloader.jar')
+    compileOnly files('libs\\SettingsLib.jar')
+    compileOnly files('libs\\setupdesign.jar')
     compileOnly files('libs\\framework.jar')
-    implementation 'androidx.annotation:annotation:+'
-    implementation 'com.airbnb.android:lottie:3.1.0'
 
 }
 

@@ -25,7 +25,7 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
-import com.android.settingslib.utils.R;
+import com.android.settingslib.R;
 
 public class AppUtils {
 
