@@ -40,7 +40,7 @@ import androidx.core.content.FileProvider;
 
 import com.android.settingslib.utils.ThreadUtils;
 
-import libcore.io.Streams;
+//import libcore.io.Streams;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -167,7 +167,8 @@ class AvatarPhotoController {
                 final ContentResolver cr = mContextInjector.getContentResolver();
                 try (InputStream in = cr.openInputStream(pictureUri);
                         OutputStream out = cr.openOutputStream(mPreCropPictureUri)) {
-                    Streams.copy(in, out);
+//                    Streams.copy(in, out);
+                    copyStream(in, out);
                 } catch (IOException e) {
                     Log.w(TAG, "Failed to copy photo", e);
                     return;
@@ -370,6 +371,14 @@ class AvatarPhotoController {
         @Override
         public ContentResolver getContentResolver() {
             return mContext.getContentResolver();
+        }
+    }
+
+    public static void copyStream(InputStream in, OutputStream out) throws IOException {
+        byte[] buffer = new byte[8192];
+        int bytesRead;
+        while ((bytesRead = in.read(buffer)) != -1) {
+            out.write(buffer, 0, bytesRead);
         }
     }
 }

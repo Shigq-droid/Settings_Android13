@@ -86,7 +86,8 @@ public final class ActivityEmbeddingUtils {
      * @param activity Activity that needs the check
      */
     public static boolean isActivityEmbedded(Activity activity) {
-        return SplitController.getInstance().isActivityEmbedded(activity);
+//        return SplitController.getInstance().isActivityEmbedded(activity);
+        return false;
     }
 
     /**

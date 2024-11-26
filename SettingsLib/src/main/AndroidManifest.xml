@@ -21,7 +21,9 @@
     <application>
         <activity
             android:name="com.android.settingslib.users.AvatarPickerActivity"
-            android:theme="@style/SudThemeGlifV2.DayNight"/>
+            android:theme="@style/SudThemeGlifV2.DayNight"
+          />
+
     </application>
 
 </manifest>

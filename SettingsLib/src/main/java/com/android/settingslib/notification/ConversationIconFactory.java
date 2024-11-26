@@ -81,7 +81,7 @@ public class ConversationIconFactory extends BaseIconFactory {
         mPackageManager = pm;
         mIconDrawableFactory = iconDrawableFactory;
         mImportantConversationColor = context.getResources().getColor(
-                R.color.important_conversation, null);
+                R.color.settingslib_accent_primary_device_default/*important_conversation*/, null);
     }
 
     /**

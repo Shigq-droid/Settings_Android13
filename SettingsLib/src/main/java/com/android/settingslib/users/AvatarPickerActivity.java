@@ -81,7 +81,8 @@ public class AvatarPickerActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(R.style.SudThemeGlifV3_DayNight);
+//        setTheme(R.style.SudThemeGlifV3_DayNight);
+        setTheme(com.google.android.setupdesign.R.style.SudThemeGlifV3_DayNight);
         ThemeHelper.trySetDynamicColor(this);
         setContentView(R.layout.avatar_picker);
         setUpButtons();
