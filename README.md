@@ -273,6 +273,8 @@ import com.google.android.setupcompat.template.FooterBarMixin;
     location: package javax.annotation.processing
 
         implementation 'javax.annotation:javax.annotation-api:1.3.2'
+        // googole下载相关jar使用，详看：https://blog.csdn.net/Sqq_yj/article/details/144085234?spm=1001.2014.3001.5501
+        implementation files('libs\\jx-1.2.1.jar')
 
         
 
