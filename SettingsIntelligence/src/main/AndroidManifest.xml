@@ -30,9 +30,10 @@
     <uses-sdk android:targetSdkVersion="31"
         tools:ignore="ExpiredTargetSdkVersion" />
 
+
+<!--    android:label="@string/app_name_settings_intelligence"-->
+<!--    android:icon="@mipmap/ic_launcher"-->
     <application
-        android:label="@string/app_name_settings_intelligence"
-        android:icon="@mipmap/ic_launcher"
         android:supportsRtl="true">
         <service
             android:name=".suggestions.SuggestionService"

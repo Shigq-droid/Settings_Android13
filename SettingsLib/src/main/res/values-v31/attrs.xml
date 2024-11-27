@@ -15,9 +15,9 @@
   limitations under the License.
 -->
 <resources>
-    <declare-styleable name="CollapsingCoordinatorLayout">
-        <!-- assign a title of collapsing toolbar title. -->
-        <attr name="collapsing_toolbar_title" format="string" />
-        <attr name="content_frame_height_match_parent" format="boolean" />
-    </declare-styleable>
+<!--    <declare-styleable name="CollapsingCoordinatorLayout">-->
+<!--        &lt;!&ndash; assign a title of collapsing toolbar title. &ndash;&gt;-->
+<!--        <attr name="collapsing_toolbar_title" format="string" />-->
+<!--        <attr name="content_frame_height_match_parent" format="boolean" />-->
+<!--    </declare-styleable>-->
 </resources>

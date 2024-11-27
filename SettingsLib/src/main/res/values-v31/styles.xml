@@ -87,4 +87,46 @@
         <item name="android:scaleY">0.5</item>
     </style>
 
+    <style name="Banner.Preference.SettingsLib"
+        parent="android:Widget.DeviceDefault">
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@drawable/settingslib_card_background</item>
+    </style>
+
+    <style name="Banner.Title.SettingsLib"
+        parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@string/settingslib_config_headlineFontFamily</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Banner.Subtitle.SettingsLib"
+        parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Banner.Summary.SettingsLib"
+        parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Banner.Dismiss.SettingsLib"
+        parent="android:Widget.DeviceDefault.ImageButton">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Banner.ButtonText.SettingsLib"
+        parent="android:Widget.DeviceDefault.Button.Borderless.Colored">
+        <item name="android:textColor">?android:attr/colorAccent</item>
+    </style>
+
 </resources>

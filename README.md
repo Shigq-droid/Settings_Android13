@@ -311,5 +311,23 @@ import com.google.android.setupcompat.template.FooterBarMixin;
 
 
 
-         //最后，在Aosp源码根目录下执行脚本，添加上系统签名
+
+19. Task :app:processDebugMainManifest FAILED
+    package="com.android.settings" found in source AndroidManifest.xml: C:\Settings\app\src\main\AndroidManifest.xml.
+    Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+    Recommendation: remove package="com.android.settings" from the source AndroidManifest.xml: C:\Settings\app\src\main\AndroidManifest.xml.
+    C:\Settings\app\src\main\AndroidManifest.xml:125:13-58 Error:
+    Attribute application@icon value=(@drawable/ic_launcher_settings) from AndroidManifest.xml:125:13-58
+    is also present at [:SettingsIntelligence] AndroidManifest.xml:34:9-43 value=(@mipmap/ic_launcher).
+    Suggestion: add 'tools:replace="android:icon"' to <application> element at AndroidManifest.xml:122:5-4491:19 to override.
+    C:\Settings\app\src\main\AndroidManifest.xml:124:13-51 Error:
+    Attribute application@label value=(@string/settings_label) from AndroidManifest.xml:124:13-51
+    is also present at [:SettingsIntelligence] AndroidManifest.xml:35:9-63 value=(@string/app_name_settings_intelligence).
+    Suggestion: add 'tools:replace="android:label"' to <application> element at AndroidManifest.xml:122:5-4491:19 to override.
+
+![intellgence_manifest.png](Png%2Fintellgence_manifest.png)
+
+        移除SettingsIntelligence > AndroidManifest 中的 label，icon 
+
+ 20.     //最后，在Aosp源码根目录下执行脚本，添加上系统签名
          java -Djava.library.path="out/host/linux-x86/lib64" -jar out/host/linux-x86/framework/signapk.jar build/target/product/security/platform.x509.pem build/target/product/security/platform.pk8 unsign_app.apk sign_app.apk

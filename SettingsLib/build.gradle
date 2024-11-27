@@ -28,6 +28,12 @@ android {
 //        jvmTarget = '21'
         jvmTarget = '1.8'
     }
+
+    // 配置 Java 9 或以上版本时需要加上 java.compiler 模块
+    lintOptions {
+        checkReleaseBuilds false
+        // 或者设置其它lint选项
+    }
 }
 
 dependencies {

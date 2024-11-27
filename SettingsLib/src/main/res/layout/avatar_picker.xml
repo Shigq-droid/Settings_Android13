@@ -21,14 +21,16 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:icon="@drawable/ic_account_circle_outline"
-    app:sucUsePartnerResource="true"
-    app:sucHeaderText="@string/avatar_picker_title">
+>
+<!--    app:sucUsePartnerResource="true"-->
+<!--    app:sucHeaderText="@string/avatar_picker_title"-->
 
     <LinearLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:gravity="center_horizontal"
-        style="@style/SudContentFrame">
+      >
+<!--        style="@style/SudContentFrame"-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/avatar_grid"
             android:layout_width="wrap_content"
