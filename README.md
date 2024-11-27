@@ -152,7 +152,7 @@ build.gradle目前尚不支持product属性，无法通过此属性来区分，�
     //import com.android.settings.intelligence.nano.SettingsIntelligenceLogProto;
     import com.android.settings.intelligence.SettingsIntelligenceLogProto;
 
-详情可参考:  [https://blog.csdn.net/Sqq_yj/article/details/144033113?spm=1001.2014.3001.5501](https://blog.csdn.net/Sqq_yj/article/details/144033113?spm=1001.2014.3001.5501)
+详参:  [https://blog.csdn.net/Sqq_yj/article/details/144033113?spm=1001.2014.3001.5501](https://blog.csdn.net/Sqq_yj/article/details/144033113?spm=1001.2014.3001.5501)
 
 
 4. \Settings\SettingsIntelligence\src\main\java\com\android\settings\intelligence\search\IntentSearchViewHolder.java:46: error: package SettingsIntelligenceLogProto does not exist
@@ -272,9 +272,12 @@ import com.google.android.setupcompat.template.FooterBarMixin;
     symbol:   class AbstractProcessor
     location: package javax.annotation.processing
 
+    
         implementation 'javax.annotation:javax.annotation-api:1.3.2'
-        // googole下载相关jar使用，详看：https://blog.csdn.net/Sqq_yj/article/details/144085234?spm=1001.2014.3001.5501
+        // googole下载相关jar使用，
         implementation files('libs\\jx-1.2.1.jar')
+
+详看：https://blog.csdn.net/Sqq_yj/article/details/144085234?spm=1001.2014.3001.5501
 
         
 
